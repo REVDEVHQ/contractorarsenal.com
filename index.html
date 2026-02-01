@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contractor Arsenal | Professional Websites That Generate Leads</title>
+    <meta name="description" content="Professional contractor websites designed to win more jobs. Built for painters, roofers, landscapers, and home service pros. Launch fast, get leads faster.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #1F1F1F;
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: #1F1F1F;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .header-wrap {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 45px;
+            width: auto;
+        }
+        
+        .header-nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .header-nav a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        
+        .header-nav a:hover {
+            color: #fff;
+        }
+        
+        .btn-apply {
+            background: #EF4444;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        .btn-apply:hover {
+            background: #DC2626;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: #1F1F1F;
+            padding: 100px 40px 80px;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero-left {
+            max-width: 750px;
+        }
+        
+        .hero-left h1 {
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+        
+        .hero-left p {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 35px;
+            line-height: 1.6;
+            max-width: 680px;
+        }
+        
+        .hero-bullets {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 40px;
+            max-width: 700px;
+        }
+        
+        .hero-bullets li {
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 15px;
+        }
+        
+        .hero-bullets li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #EF4444;
+            font-weight: 900;
+            font-size: 18px;
+        }
+        
+        .cta-row {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 60px 40px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .trust-bar p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .trust-stats {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        
+        .trust-stat {
+            border-left: 2px solid rgba(255, 255, 255, 0.1);
+            padding-left: 20px;
+            text-align: left;
+        }
+        
+        .trust-stat-num {
+            font-size: 36px;
+            font-weight: 900;
+            color: #EF4444;
+            margin-bottom: 5px;
+        }
+        
+        .trust-stat-label {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Services Section */
+        .services {
+            background: #1F1F1F;
+            padding: 100px 40px;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .section-subtitle {
+            color: #EF4444;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .section-header h2 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .section-header p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+        }
+        
+        .services-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+        }
+        
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 40px 30px;
+            transition: all 0.3s;
+        }
+        
+        .service-card:hover {
+            border-color: #EF4444;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .service-icon {
+            font-size: 42px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .service-card h3 {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+        
+        .service-card p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        
+        /* What You Get Section */
+        .what-you-get {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 100px 40px;
+        }
+        
+        .deliverables-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .deliverable-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 25px 30px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .deliverable-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        
+        .deliverable-item h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .deliverable-item p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.5;
+        }
+        
+        /* Results Section */
+        .results {
+            background: #1F1F1F;
+            padding: 100px 40px;
+        }
+        
+        .case-study {
+            max-width: 1000px;
+            margin: 0 auto 70px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 50px;
+        }
+        
+        .case-study-header {
+            margin-bottom: 35px;
+        }
+        
+        .case-study-client {
+            font-size: 14px;
+            color: #EF4444;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .case-study h3 {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .case-study-context {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        .case-study-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding-top: 35px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .metric-item {
+            text-align: center;
+        }
+        
+        .metric-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: #10B981;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+        
+        .metric-label {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Pricing Section */
+        .pricing-section {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 100px 40px;
+        }
+        
+        .pricing-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px 30px;
+            transition: all 0.3s;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .pricing-card:hover {
+            border-color: #EF4444;
+            transform: translateY(-5px);
+        }
+        
+        .pricing-card.featured {
+            border-color: #EF4444;
+            background: rgba(239, 68, 68, 0.05);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #EF4444;
+            color: #fff;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .pricing-header {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 25px;
+        }
+        
+        .pricing-header h3 {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 52px;
+            font-weight: 900;
+            color: #EF4444;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        
+        .price-period {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+            flex-grow: 1;
+        }
+        
+        .pricing-features li {
+            padding: 10px 0;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .btn-pricing {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: #EF4444;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+            margin-top: auto;
+        }
+        
+        .btn-pricing:hover {
+            background: #DC2626;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: #1F1F1F;
+            padding: 100px 40px;
+        }
+        
+        .testimonials-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 35px;
+        }
+        
+        .stars {
+            color: #FFC107;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+        
+        .testimonial-author strong {
+            display: block;
+            color: #fff;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        
+        .testimonial-author span {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 100px 40px;
+        }
+        
+        .faq-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+        }
+        
+        .faq-item h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+        
+        .faq-item p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            font-size: 15px;
+        }
+        
+        /* Who This Is For */
+        .for-section {
+            background: #1F1F1F;
+            padding: 100px 40px;
+        }
+        
+        .for-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        .for-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 40px;
+        }
+        
+        .for-card.is-for {
+            border-color: #10B981;
+        }
+        
+        .for-card.not-for {
+            border-color: #EF4444;
+        }
+        
+        .for-card h3 {
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+        
+        .for-card.is-for h3 {
+            color: #10B981;
+        }
+        
+        .for-card.not-for h3 {
+            color: #EF4444;
+        }
+        
+        .for-card ul {
+            list-style: none;
+        }
+        
+        .for-card li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+        
+        .for-card.is-for li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10B981;
+            font-weight: 900;
+        }
+        
+        .for-card.not-for li::before {
+            content: '✗';
+            position: absolute;
+            left: 0;
+            color: #EF4444;
+            font-weight: 900;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a1a1a 100%);
+            padding: 120px 40px;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 52px;
+            font-weight: 900;
+            margin-bottom: 25px;
+            line-height: 1.1;
+        }
+        
+        .cta-content p {
+            font-size: 19px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .btn-cta {
+            padding: 18px 40px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        .btn-cta-primary {
+            background: #EF4444;
+            color: #fff;
+        }
+        
+        .btn-cta-primary:hover {
+            background: #DC2626;
+        }
+        
+        .btn-cta-secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-cta-secondary:hover {
+            border-color: #fff;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1F1F1F;
+            padding: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-content p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+        
+        .social-link {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.2s;
+        }
+        
+        .social-link:hover {
+            color: #fff;
+        }
+        
+        /* Table scroll wrapper */
+        .table-scroll {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 8px;
+        }
+        
+        .table-scroll table {
+            min-width: 650px;
+        }
+        
+        /* ===== Mobile fixes ===== */
+        @media (max-width: 968px) {
+            .hero {
+                padding: 70px 20px 50px;
+            }
+
+            .header-wrap {
+                padding: 0 20px;
+            }
+            
+            .header-nav {
+                display: none;
+            }
+
+            .hero-left h1 {
+                font-size: 36px;
+                line-height: 1.08;
+                margin-bottom: 16px;
+            }
+
+            .hero-left p {
+                font-size: 16px;
+                margin-bottom: 22px;
+            }
+            
+            .hero-bullets {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            
+            .cta-row {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .cta-row .btn-apply {
+                width: 100%;
+                text-align: center;
+            }
+
+            .btn-apply {
+                padding: 12px 18px;
+                font-size: 14px;
+            }
+            
+            .trust-stats {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .case-study,
+            .testimonial-card,
+            .faq-item,
+            .pricing-card,
+            .for-card {
+                padding: 22px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                gap: 12px;
+                align-items: stretch;
+            }
+
+            .btn-cta {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .services-grid,
+            .deliverables-grid,
+            .testimonials-grid,
+            .pricing-grid,
+            .for-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .case-study-metrics {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .section-header h2 {
+                font-size: 36px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .price {
+                font-size: 44px;
+            }
+
+            .cta-content h2 {
+                font-size: 34px;
+            }
+
+            .section-header h2 {
+                font-size: 32px;
+            }
+            
+            .logo img {
+                height: 38px;
+            }
+            
+            .header {
+                padding: 14px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <a href="#" class="logo">
+                <img src="https://storage.googleapis.com/msgsndr/kfZT6c91jZcZU6PUztl8/media/69387c0a578cc7a588bf9199.png" alt="Contractor Arsenal">
+            </a>
+            <nav class="header-nav">
+                <a href="#pricing">Pricing</a>
+                <a href="#examples">Examples</a>
+                <a href="#faq">FAQ</a>
+                <a href="#apply" class="btn-apply">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1>Win More Jobs with a Professional Website That Actually Works</h1>
+                <p>Stop losing customers to competitors. Get a contractor website built to generate leads 24/7—designed for painters, roofers, landscapers, and home service pros who want to grow.</p>
+                
+                <ul class="hero-bullets">
+                    <li>Mobile-first, fast, SEO-ready</li>
+                    <li>Lead forms + click-to-call built in</li>
+                    <li>Launch in 48-72 hours</li>
+                    <li>Unlimited edits during setup</li>
+                </ul>
+                
+                <div class="cta-row">
+                    <a href="#pricing" class="btn-apply">View Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-bar">
+        <p>Trusted by contractors nationwide</p>
+        <div class="trust-stats">
+            <div class="trust-stat">
+                <div class="trust-stat-num">50+</div>
+                <div class="trust-stat-label">Active contractor sites</div>
+            </div>
+            <div class="trust-stat">
+                <div class="trust-stat-num">48hrs</div>
+                <div class="trust-stat-label">Average launch time</div>
+            </div>
+            <div class="trust-stat">
+                <div class="trust-stat-num">4.9/5</div>
+                <div class="trust-stat-label">Client satisfaction</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="section-header">
+            <div class="section-subtitle">What we build</div>
+            <h2>Everything You Need to<br>Get Found and Get Hired</h2>
+            <p>Professional contractor websites designed to turn visitors into paying customers</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🎨</span>
+                <h3>Custom Design</h3>
+                <p>Industry-specific templates for painters, roofers, landscapers, remodelers—no generic website builders.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">📱</span>
+                <h3>Lead Capture</h3>
+                <p>Quote request forms, click-to-call buttons, instant email/SMS notifications so you never miss a lead.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">🔍</span>
+                <h3>Local SEO</h3>
+                <p>Optimized for Google search in your city. Service pages, Google Business integration, schema markup included.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="what-you-get">
+        <div class="section-header">
+            <div class="section-subtitle">Deliverables</div>
+            <h2>What You Actually Get</h2>
+            <p>No surprises. Here's exactly what's included in every package.</p>
+        </div>
+        
+        <div class="deliverables-grid">
+            <div class="deliverable-item">
+                <span class="deliverable-icon">🌐</span>
+                <div>
+                    <h4>Domain + Hosting Setup</h4>
+                    <p>We connect your domain or help you register one. Hosting recommendations included.</p>
+                </div>
+            </div>
+            
+            <div class="deliverable-item">
+                <span class="deliverable-icon">📝</span>
+                <div>
+                    <h4>Lead Forms Routed to You</h4>
+                    <p>All quote requests sent instantly to your email and/or phone via SMS.</p>
+                </div>
+            </div>
+            
+            <div class="deliverable-item">
+                <span class="deliverable-icon">📍</span>
+                <div>
+                    <h4>Google Business Integration</h4>
+                    <p>We'll connect your Google Business Profile so reviews and map location show on your site.</p>
+                </div>
+            </div>
+            
+            <div class="deliverable-item">
+                <span class="deliverable-icon">📊</span>
+                <div>
+                    <h4>Analytics Setup (GA4 + GSC)</h4>
+                    <p>Track visitors, leads, and performance with Google Analytics and Search Console.</p>
+                </div>
+            </div>
+            
+            <div class="deliverable-item">
+                <span class="deliverable-icon">🔒</span>
+                <div>
+                    <h4>SSL Certificate</h4>
+                    <p>Secure HTTPS connection for trust and SEO. Included at no extra cost.</p>
+                </div>
+            </div>
+            
+            <div class="deliverable-item">
+                <span class="deliverable-icon">✏️</span>
+                <div>
+                    <h4>Unlimited Edits (First 30 Days)</h4>
+                    <p>Need changes? We make updates fast during your launch window. No hourly rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="results" id="examples">
+        <div class="section-header">
+            <div class="section-subtitle">Real results</div>
+            <h2>Websites That Work</h2>
+            <p>Case studies from contractors who invested in a professional online presence</p>
+        </div>
+        
+        <div class="case-study">
+            <div class="case-study-header">
+                <div class="case-study-client">Case Study: Premier Painting LLC</div>
+                <h3>From 2-3 Leads/Month to 18 Qualified Leads in 60 Days</h3>
+                <p class="case-study-context">
+                    Small residential painting company in Charlotte, NC. Previously relied on word-of-mouth and Facebook posts. Launched a 5-page Essential Site with local SEO, service pages, and lead forms.
+                </p>
+            </div>
+            <div class="case-study-metrics">
+                <div class="metric-item">
+                    <div class="metric-number">18</div>
+                    <div class="metric-label">Leads in first 60 days</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-number">$23K</div>
+                    <div class="metric-label">New contract value</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-number">9.2x</div>
+                    <div class="metric-label">Return on investment</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="case-study">
+            <div class="case-study-header">
+                <div class="case-study-client">Case Study: Elite Roofing Services</div>
+                <h3>Website Paid for Itself in 3 Weeks</h3>
+                <p class="case-study-context">
+                    Established roofing contractor in Austin, TX. Had an outdated website from 2016 that wasn't mobile-friendly. Upgraded to Premium Site with storm damage pages and financing info. Saw immediate improvement in quote requests.
+                </p>
+            </div>
+            <div class="case-study-metrics">
+                <div class="metric-item">
+                    <div class="metric-number">11</div>
+                    <div class="metric-label">Leads in first 3 weeks</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-number">$41K</div>
+                    <div class="metric-label">First job from new site</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-number">11.7x</div>
+                    <div class="metric-label">Return on investment</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <div class="section-header">
+            <div class="section-subtitle">Simple Pricing</div>
+            <h2>Choose Your Package</h2>
+            <p>One-time payment. No monthly fees. Unlimited edits during setup.</p>
+        </div>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Essential Site</h3>
+                    <div class="price">$2,500</div>
+                    <div class="price-period">one-time payment</div>
+                </div>
+                <ul class="pricing-features">
+                    <li>✓ 5 custom pages</li>
+                    <li>✓ Mobile-responsive design</li>
+                    <li>✓ Lead capture forms</li>
+                    <li>✓ Click-to-call buttons</li>
+                    <li>✓ Full SEO setup</li>
+                    <li>✓ Google Business integration</li>
+                    <li>✓ Photo optimization</li>
+                    <li>✓ SSL certificate</li>
+                    <li>✓ 48-72 hour launch</li>
+                    <li>✓ 30 days of edits</li>
+                </ul>
+                <a href="https://buy.stripe.com/3cI3cv9oX2952s59Yy9bO0C" class="btn-pricing">Get Started</a>
+            </div>
+            
+            <div class="pricing-card featured">
+                <div class="popular-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3>Premium Site</h3>
+                    <div class="price">$3,500</div>
+                    <div class="price-period">one-time payment</div>
+                </div>
+                <ul class="pricing-features">
+                    <li>✓ 10 custom pages</li>
+                    <li>✓ Premium design template</li>
+                    <li>✓ Advanced lead forms</li>
+                    <li>✓ Enterprise SEO setup</li>
+                    <li>✓ Google Business integration</li>
+                    <li>✓ Professional copywriting</li>
+                    <li>✓ Photo optimization</li>
+                    <li>✓ Service area pages (5 cities)</li>
+                    <li>✓ Blog setup</li>
+                    <li>✓ Review widget integration</li>
+                    <li>✓ SSL + security</li>
+                    <li>✓ 48-72 hour launch</li>
+                    <li>✓ 30 days of edits</li>
+                </ul>
+                <a href="https://buy.stripe.com/3cI3cv9oX2952s59Yy9bO0C" class="btn-pricing">Get Started</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <div class="price-period">contact for quote</div>
+                </div>
+                <ul class="pricing-features">
+                    <li>✓ Unlimited pages</li>
+                    <li>✓ Custom design + branding</li>
+                    <li>✓ Advanced integrations</li>
+                    <li>✓ CRM setup (HubSpot, etc.)</li>
+                    <li>✓ Marketing automation</li>
+                    <li>✓ Priority support</li>
+                    <li>✓ Dedicated account manager</li>
+                    <li>✓ Custom features</li>
+                    <li>✓ Multi-location support</li>
+                    <li>✓ White-glove service</li>
+                </ul>
+                <a href="mailto:hello@contractorarsenal.com" class="btn-pricing">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-header">
+            <div class="section-subtitle">Client feedback</div>
+            <h2>What Contractors Say</h2>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"I was nervous about the cost but it paid for itself in 3 weeks. Got my first big job from a lead that found us on Google. The site looks way more professional than what I had before."</p>
+                <div class="testimonial-author">
+                    <strong>David R.</strong>
+                    <span>Roofing Contractor, Austin TX</span>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Best investment I've made for my business. The lead forms make it so easy for people to request quotes. I'm getting 3-4 solid leads per week now instead of just relying on word of mouth."</p>
+                <div class="testimonial-author">
+                    <strong>Jennifer M.</strong>
+                    <span>Painting Company Owner, Charlotte NC</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="for-section">
+        <div class="section-header">
+            <div class="section-subtitle">Is this for you?</div>
+            <h2>Who This Is For (And Who It's Not For)</h2>
+        </div>
+        
+        <div class="for-grid">
+            <div class="for-card is-for">
+                <h3>✓ This Is For You If...</h3>
+                <ul>
+                    <li>You're doing $20K+/month in revenue</li>
+                    <li>You have photos of your work (even phone pics work)</li>
+                    <li>You're ready to invest in growing your business</li>
+                    <li>You want more inbound leads instead of chasing referrals</li>
+                    <li>You're willing to spend 30 minutes filling out our questionnaire</li>
+                </ul>
+            </div>
+            
+            <div class="for-card not-for">
+                <h3>✗ This Is NOT For You If...</h3>
+                <ul>
+                    <li>You just started and have no completed projects yet</li>
+                    <li>You're not ready to respond to leads within 24 hours</li>
+                    <li>You don't have a defined service area or pricing</li>
+                    <li>You're looking for a $200 Fiverr template</li>
+                    <li>You expect 100 leads overnight (realistic: 5-15/month after SEO kicks in)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="section-header">
+            <div class="section-subtitle">Common Questions</div>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3>How long does it really take to build my website?</h3>
+                <p>Initial build takes 48-72 hours after you submit your content (business info, photos, services). Most delays happen because contractors are busy and take a few days to send us everything. Once we have it, we work fast.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What if I need changes after you build it?</h3>
+                <p>All packages include unlimited edits for the first 30 days after launch. After that, we offer ongoing support packages or one-off updates. Most contractors don't need much after launch.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Will my website actually show up on Google?</h3>
+                <p>We set up basic SEO (titles, descriptions, schema markup, sitemap submission). Premium packages include service area pages and blog setup. Ranking takes 2-4 months depending on competition in your city. We can't guarantee #1 rankings—anyone who does is lying.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you provide hosting or do I need my own?</h3>
+                <p>We recommend hosting platforms and help you set it up (usually $15-30/month). We don't mark up hosting costs—you pay the provider directly so you own everything.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What if I don't have professional photos?</h3>
+                <p>Phone photos work fine as long as they're clear and show your work. We'll optimize and crop them to look good on the site. If you need professional photos, we can recommend photographers in your area.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can I see examples of sites you've built?</h3>
+                <p>Yes—DM us on Instagram (@contractorarsenal) and tell us your trade (painting, roofing, etc.). We'll send examples specific to your industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="apply">
+        <div class="cta-content">
+            <h2>Ready to Win More Jobs?</h2>
+            <p>Stop losing customers to competitors with better websites. Get a professional contractor site that generates leads 24/7. Most sites launch in 48-72 hours.</p>
+            <div class="cta-buttons">
+                <a href="#pricing" class="btn-cta btn-cta-primary">View Pricing</a>
+                <a href="https://www.instagram.com/contractorarsenal/" target="_blank" class="btn-cta btn-cta-secondary">Message Us on Instagram →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Contractor Arsenal. All rights reserved.</p>
+            <a href="https://www.instagram.com/contractorarsenal/" target="_blank" class="social-link">📸</a>
+        </div>
+    </footer>
+</body>
+</html>
