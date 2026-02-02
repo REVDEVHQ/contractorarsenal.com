@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now | Contractor Arsenal</title>
+    <meta name="description" content="Ready to get a professional contractor website? Apply now and launch your site in 48-72 hours.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #1F1F1F;
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: #1F1F1F;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-wrap {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 45px;
+            width: auto;
+        }
+        
+        .header-nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .header-nav a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        
+        .header-nav a:hover {
+            color: #fff;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #1F1F1F 0%, #2a1a1a 100%);
+            padding: 100px 40px 60px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.75);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        /* Form Section */
+        .form-section {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 80px 40px 100px;
+        }
+        
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 50px;
+        }
+        
+        .form-placeholder {
+            text-align: center;
+            padding: 80px 40px;
+        }
+        
+        .form-placeholder h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .form-placeholder p {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 30px;
+        }
+        
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 600px;
+            margin: 40px auto 0;
+        }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .contact-card:hover {
+            border-color: #EF4444;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(239, 68, 68, 0.2);
+        }
+        
+        .contact-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .contact-card p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Quick Pricing */
+        .quick-pricing {
+            background: #1F1F1F;
+            padding: 80px 40px;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-header h2 {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+        
+        .section-header p {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .pricing-quick {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        .price-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 35px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .price-card:hover {
+            border-color: #EF4444;
+            transform: translateY(-5px);
+        }
+        
+        .price-card h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        
+        .price-card .price {
+            font-size: 48px;
+            font-weight: 900;
+            color: #EF4444;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        
+        .price-card li {
+            padding: 8px 0;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+        
+        .btn-stripe {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background: #EF4444;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .btn-stripe:hover {
+            background: #DC2626;
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1F1F1F;
+            padding: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-content p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+        
+        .social-link {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.2s;
+        }
+        
+        .social-link:hover {
+            color: #fff;
+        }
+        
+        /* Mobile */
+        @media (max-width: 968px) {
+            .header-nav {
+                display: none;
+            }
+            
+            .form-container {
+                padding: 30px 25px;
+            }
+            
+            .contact-options,
+            .pricing-quick {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <a href="index.html" class="logo">
+                <img src="https://storage.googleapis.com/msgsndr/kfZT6c91jZcZU6PUztl8/media/69387c0a578cc7a588bf9199.png" alt="Contractor Arsenal">
+            </a>
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="apply.html">Apply</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Ready to Win More Jobs?</h1>
+        <p>Get a professional contractor website that generates leads 24/7. Launch in 48-72 hours.</p>
+    </section>
+
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-placeholder">
+                <h2>Application Form Coming Soon</h2>
+                <p>We're finalizing our application process. In the meantime, reach out to us directly using one of the methods below, or choose a package and get started immediately with Stripe checkout.</p>
+                
+                <div class="contact-options">
+                    <a href="https://www.instagram.com/contractorarsenal/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">📸</div>
+                        <h3>Instagram DM</h3>
+                        <p>Message us directly</p>
+                    </a>
+                    
+                    <a href="tel:+18885551234" class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p>+1 (888) 555-1234</p>
+                    </a>
+                    
+                    <a href="mailto:hello@contractorarsenal.com" class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>hello@contractorarsenal.com</p>
+                    </a>
+                    
+                    <div class="contact-card" style="pointer-events: none; opacity: 0.5;">
+                        <div class="contact-icon">📝</div>
+                        <h3>Contact Form</h3>
+                        <p>Coming soon...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-pricing">
+        <div class="section-header">
+            <h2>Or Start Immediately</h2>
+            <p>Choose your package and checkout securely with Stripe</p>
+        </div>
+        
+        <div class="pricing-quick">
+            <div class="price-card">
+                <h3>Essential Site</h3>
+                <div class="price">$2,500</div>
+                <ul>
+                    <li>✓ 5 custom pages</li>
+                    <li>✓ Mobile-responsive design</li>
+                    <li>✓ Lead capture forms</li>
+                    <li>✓ Full SEO setup</li>
+                    <li>✓ 48-72 hour launch</li>
+                </ul>
+                <a href="https://buy.stripe.com/3cI3cv9oX2952s59Yy9bO0C" class="btn-stripe">Get Started - $2,500</a>
+            </div>
+            
+            <div class="price-card">
+                <h3>Premium Site</h3>
+                <div class="price">$3,500</div>
+                <ul>
+                    <li>✓ 10 custom pages</li>
+                    <li>✓ Premium design</li>
+                    <li>✓ Advanced SEO</li>
+                    <li>✓ Professional copywriting</li>
+                    <li>✓ 48-72 hour launch</li>
+                </ul>
+                <a href="#contact" class="btn-stripe">Contact for Premium</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Contractor Arsenal. All rights reserved.</p>
+            <a href="https://www.instagram.com/contractorarsenal/" target="_blank" rel="noopener noreferrer" class="social-link">📸</a>
+        </div>
+    </footer>
+</body>
+</html>
