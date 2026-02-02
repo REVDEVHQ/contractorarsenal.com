@@ -304,6 +304,29 @@
             text-align: center;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .trust-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        
+        .trust-bar p,
+        .trust-stats {
+            position: relative;
+            z-index: 1;
         }
         
         .trust-bar p {
@@ -462,6 +485,29 @@
         .what-you-get {
             background: rgba(255, 255, 255, 0.02);
             padding: 100px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .what-you-get::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(239, 68, 68, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(239, 68, 68, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .section-header,
+        .deliverables-grid {
+            position: relative;
+            z-index: 1;
         }
         
         .deliverables-grid {
@@ -607,6 +653,28 @@
         .pricing-section {
             background: rgba(255, 255, 255, 0.02);
             padding: 100px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.4;
+            z-index: 0;
+        }
+        
+        .pricing-section .section-header,
+        .pricing-grid {
+            position: relative;
+            z-index: 1;
         }
         
         .pricing-grid {
@@ -821,6 +889,33 @@
         .faq-section {
             background: rgba(255, 255, 255, 0.02);
             padding: 100px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .faq-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 50px,
+                    rgba(255, 255, 255, 0.015) 50px,
+                    rgba(255, 255, 255, 0.015) 51px
+                );
+            opacity: 0.5;
+            z-index: 0;
+        }
+        
+        .faq-section .section-header,
+        .faq-grid {
+            position: relative;
+            z-index: 1;
         }
         
         .faq-grid {
@@ -959,11 +1054,42 @@
             background: linear-gradient(135deg, #1a1a1a 0%, #2a1a1a 100%);
             padding: 120px 40px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(239, 68, 68, 0.05) 2px, transparent 2px),
+                linear-gradient(90deg, rgba(239, 68, 68, 0.05) 2px, transparent 2px);
+            background-size: 80px 80px;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(239, 68, 68, 0.1) 0%, transparent 50%);
+            animation: pulse 10s ease-in-out infinite;
+            z-index: 0;
         }
         
         .cta-content {
             max-width: 800px;
             margin: 0 auto;
+            position: relative;
+            z-index: 1;
         }
         
         .cta-content h2 {
@@ -1181,12 +1307,14 @@
                 <img src="https://storage.googleapis.com/msgsndr/kfZT6c91jZcZU6PUztl8/media/69387c0a578cc7a588bf9199.png" alt="Contractor Arsenal">
             </a>
             <nav class="header-nav">
+                <a href="index.html">Home</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#examples">Examples</a>
+                <a href="about.html">About</a>
                 <a href="#faq">FAQ</a>
-                <a href="#pricing" class="btn-apply">Get Started</a>
+                <a href="apply.html" class="btn-apply">Get Started</a>
             </nav>
-            <a href="#pricing" class="btn-apply mobile-cta">Get Started</a>
+            <a href="apply.html" class="btn-apply mobile-cta">Get Started</a>
         </div>
     </header>
 
@@ -1204,7 +1332,7 @@
                 </ul>
                 
                 <div class="cta-row">
-                    <a href="https://buy.stripe.com/3cI3cv9oX2952s59Yy9bO0C" class="btn-apply">Get Started Now</a>
+                    <a href="apply.html" class="btn-apply">Get Started Now</a>
                     <a href="tel:+18885551234" class="btn-cta btn-cta-secondary" style="padding:12px 28px;border-radius:6px;background:transparent;border:2px solid rgba(255,255,255,0.3);color:#fff;text-decoration:none;font-weight:700;transition:all 0.2s;">📞 Call Us</a>
                 </div>
             </div>
@@ -1403,7 +1531,7 @@
                     <li>✓ 48-72 hour launch</li>
                     <li>✓ 30 days of edits</li>
                 </ul>
-                <a href="https://buy.stripe.com/3cI3cv9oX2952s59Yy9bO0C" class="btn-pricing">Get Started</a>
+                <a href="apply.html" class="btn-pricing">Get Started</a>
             </div>
             
             <div class="pricing-card featured">
@@ -1428,7 +1556,7 @@
                     <li>✓ 48-72 hour launch</li>
                     <li>✓ 30 days of edits</li>
                 </ul>
-                <a href="#apply" class="btn-pricing">Get Started</a>
+                <a href="apply.html" class="btn-pricing">Get Started</a>
             </div>
             
             <div class="pricing-card">
@@ -1556,8 +1684,8 @@
             <h2>Ready to Win More Jobs?</h2>
             <p>Stop losing customers to competitors with better websites. Get a professional contractor site that generates leads 24/7. Most sites launch in 48-72 hours.</p>
             <div class="cta-buttons">
-                <a href="#pricing" class="btn-cta btn-cta-primary">View Pricing</a>
-                <a href="https://www.instagram.com/contractorarsenal/" target="_blank" rel="noopener noreferrer" class="btn-cta btn-cta-secondary">Message Us on Instagram →</a>
+                <a href="apply.html" class="btn-cta btn-cta-primary">Apply Now</a>
+                <a href="about.html" class="btn-cta btn-cta-secondary">Learn More →</a>
             </div>
         </div>
     </section>
