@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contractor Arsenal | Professional Websites That Generate Leads</title>
-    <meta name="description" content="Professional contractor websites designed to win more jobs. Built for painters, roofers, landscapers, and home service pros. Launch fast, get leads faster.">
+    <title>Contractor Arsenal | Get More Calls in 7-14 Days</title>
+    <meta name="description" content="A contractor website that turns visits into calls and quote requests. Built for painters, roofers, landscapers. Launch in 48-72 hours.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contractor Arsenal | Get More Calls in 7-14 Days">
+    <meta property="og:description" content="Professional contractor websites that generate leads. Built to rank locally and convert visitors.">
+    <meta property="og:image" content="https://storage.googleapis.com/msgsndr/kfZT6c91jZcZU6PUztl8/media/69387c0a578cc7a588bf9199.png">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="https://storage.googleapis.com/msgsndr/kfZT6c91jZcZU6PUztl8/media/69387c0a578cc7a588bf9199.png" type="image/png">
+    <link rel="canonical" href="https://contractorarsenal.com">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +30,16 @@
             scroll-behavior: smooth;
         }
         
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+            html {
+                scroll-behavior: auto;
+            }
+        }
+        
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: #1F1F1F;
@@ -28,59 +47,13 @@
             line-height: 1.6;
         }
         
-        /* Fade in animation for sections */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
         @keyframes pulse {
             0%, 100% {
                 opacity: 1;
             }
             50% {
-                opacity: 0.5;
+                opacity: 0.6;
             }
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-        
-        /* Apply animations to sections */
-        section {
-            animation: fadeIn 0.6s ease-out;
         }
         
         /* Header */
@@ -233,7 +206,6 @@
         
         .hero-left {
             max-width: 750px;
-            animation: fadeInUp 0.8s ease-out;
         }
         
         .hero-left h1 {
@@ -241,7 +213,6 @@
             font-weight: 900;
             line-height: 1.1;
             margin-bottom: 25px;
-            animation: fadeInUp 0.8s ease-out 0.1s backwards;
         }
         
         .hero-left p {
@@ -250,7 +221,6 @@
             margin-bottom: 35px;
             line-height: 1.6;
             max-width: 680px;
-            animation: fadeInUp 0.8s ease-out 0.2s backwards;
         }
         
         .hero-bullets {
@@ -259,7 +229,6 @@
             gap: 15px;
             margin-bottom: 40px;
             max-width: 700px;
-            animation: fadeInUp 0.8s ease-out 0.3s backwards;
         }
         
         .hero-bullets li {
@@ -268,12 +237,6 @@
             position: relative;
             color: rgba(255, 255, 255, 0.85);
             font-size: 15px;
-            transition: all 0.3s ease;
-        }
-        
-        .hero-bullets li:hover {
-            color: #fff;
-            transform: translateX(5px);
         }
         
         .hero-bullets li::before {
@@ -283,18 +246,12 @@
             color: #EF4444;
             font-weight: 900;
             font-size: 18px;
-            transition: transform 0.3s ease;
-        }
-        
-        .hero-bullets li:hover::before {
-            transform: scale(1.2);
         }
         
         .cta-row {
             display: flex;
             gap: 15px;
             align-items: center;
-            animation: fadeInUp 0.8s ease-out 0.4s backwards;
         }
         
         /* Trust Bar */
@@ -1303,44 +1260,46 @@
 <body>
     <header class="header">
         <div class="header-wrap">
-            <a href="#" class="logo">
-                <img src="https://storage.googleapis.com/msgsndr/kfZT6c91jZcZU6PUztl8/media/69387c0a578cc7a588bf9199.png" alt="Contractor Arsenal">
+            <a href="index.html" class="logo">
+                <img src="https://storage.googleapis.com/msgsndr/kfZT6c91jZcZU6PUztl8/media/69387c0a578cc7a588bf9199.png" alt="Contractor Arsenal" width="180" height="45">
             </a>
             <nav class="header-nav">
-                <a href="index.html">Home</a>
-                <a href="#pricing">Pricing</a>
                 <a href="#examples">Examples</a>
-                <a href="about.html">About</a>
+                <a href="#pricing">Pricing</a>
                 <a href="#faq">FAQ</a>
-                <a href="apply.html" class="btn-apply">Get Started</a>
+                <a href="apply.html" class="btn-apply">Apply (60 sec)</a>
             </nav>
-            <a href="apply.html" class="btn-apply mobile-cta">Get Started</a>
+            <a href="apply.html" class="btn-apply mobile-cta">Apply (60 sec)</a>
         </div>
     </header>
 
     <section class="hero">
         <div class="hero-content">
             <div class="hero-left">
-                <h1>Win More Jobs with a Professional Website That Actually Works</h1>
-                <p>Stop losing customers to competitors. Get a contractor website built to generate leads 24/7—designed for painters, roofers, landscapers, and home service pros who want to grow.</p>
+                <h1>A Contractor Website That Gets You Calls in 7–14 Days</h1>
+                <p>Built for painters, roofers, landscapers. Fast, mobile-first, lead forms + click-to-call. Launch in 48–72 hours.</p>
                 
                 <ul class="hero-bullets">
-                    <li>Mobile-first, fast, SEO-ready</li>
-                    <li>Lead forms + click-to-call built in</li>
-                    <li>Launch in 48-72 hours</li>
-                    <li>Unlimited edits during setup</li>
+                    <li>Launch in 48–72 hours</li>
+                    <li>Built to rank in your city (local SEO setup included)</li>
+                    <li>Calls + quote requests wired to your phone</li>
+                    <li>30 days of edits so it's perfect</li>
                 </ul>
                 
+                <div style="margin-bottom: 35px; font-size: 13px; color: rgba(255,255,255,0.5);">
+                    50+ active contractor sites • avg launch 48hrs • 4.9/5 satisfaction
+                </div>
+                
                 <div class="cta-row">
-                    <a href="apply.html" class="btn-apply">Get Started Now</a>
-                    <a href="tel:+18885551234" class="btn-cta btn-cta-secondary" style="padding:12px 28px;border-radius:6px;background:transparent;border:2px solid rgba(255,255,255,0.3);color:#fff;text-decoration:none;font-weight:700;transition:all 0.2s;">📞 Call Us</a>
+                    <a href="apply.html" class="btn-apply">Apply Now (60 sec)</a>
+                    <a href="#examples" style="padding:12px 28px;border-radius:6px;background:transparent;border:2px solid rgba(255,255,255,0.3);color:#fff;text-decoration:none;font-weight:700;transition:all 0.2s;">See Examples</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="trust-bar">
-        <p>Trusted by contractors nationwide</p>
+        <p>Trusted by busy contractors</p>
         <div class="trust-stats">
             <div class="trust-stat">
                 <div class="trust-stat-num">50+</div>
@@ -1360,8 +1319,8 @@
     <section class="services">
         <div class="section-header">
             <div class="section-subtitle">What we build</div>
-            <h2>Everything You Need to<br>Get Found and Get Hired</h2>
-            <p>Professional contractor websites designed to turn visitors into paying customers</p>
+            <h2>Built to Get Calls, Not Compliments</h2>
+            <p>Contractor websites designed to turn visits into quote requests</p>
         </div>
         
         <div class="services-grid">
@@ -1458,6 +1417,25 @@
                     Small residential painting company in Charlotte, NC. Previously relied on word-of-mouth and Facebook posts. Launched a 5-page Essential Site with local SEO, service pages, and lead forms.
                 </p>
             </div>
+            
+            <div style="background: rgba(255, 255, 255, 0.03); border-left: 3px solid #EF4444; padding: 20px; margin: 25px 0;">
+                <h4 style="font-size: 14px; color: #EF4444; margin-bottom: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">What Changed:</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 6px 0; padding-left: 20px; position: relative; color: rgba(255, 255, 255, 0.8); font-size: 14px;">
+                        <span style="position: absolute; left: 0; color: #EF4444;">→</span> New service pages for each city they serve
+                    </li>
+                    <li style="padding: 6px 0; padding-left: 20px; position: relative; color: rgba(255, 255, 255, 0.8); font-size: 14px;">
+                        <span style="position: absolute; left: 0; color: #EF4444;">→</span> Call-first mobile layout
+                    </li>
+                    <li style="padding: 6px 0; padding-left: 20px; position: relative; color: rgba(255, 255, 255, 0.8); font-size: 14px;">
+                        <span style="position: absolute; left: 0; color: #EF4444;">→</span> Quote form + follow-up routing
+                    </li>
+                    <li style="padding: 6px 0; padding-left: 20px; position: relative; color: rgba(255, 255, 255, 0.8); font-size: 14px;">
+                        <span style="position: absolute; left: 0; color: #EF4444;">→</span> Google Business integration
+                    </li>
+                </ul>
+            </div>
+            
             <div class="case-study-metrics">
                 <div class="metric-item">
                     <div class="metric-number">18</div>
@@ -1485,6 +1463,25 @@
                     Established roofing contractor in Austin, TX. Had an outdated website from 2016 that wasn't mobile-friendly. Upgraded to Premium Site with storm damage pages and financing info. Saw immediate improvement in quote requests.
                 </p>
             </div>
+            
+            <div style="background: rgba(255, 255, 255, 0.03); border-left: 3px solid #EF4444; padding: 20px; margin: 25px 0;">
+                <h4 style="font-size: 14px; color: #EF4444; margin-bottom: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">What Changed:</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 6px 0; padding-left: 20px; position: relative; color: rgba(255, 255, 255, 0.8); font-size: 14px;">
+                        <span style="position: absolute; left: 0; color: #EF4444;">→</span> Mobile-first redesign
+                    </li>
+                    <li style="padding: 6px 0; padding-left: 20px; position: relative; color: rgba(255, 255, 255, 0.8); font-size: 14px;">
+                        <span style="position: absolute; left: 0; color: #EF4444;">→</span> Storm damage landing pages
+                    </li>
+                    <li style="padding: 6px 0; padding-left: 20px; position: relative; color: rgba(255, 255, 255, 0.8); font-size: 14px;">
+                        <span style="position: absolute; left: 0; color: #EF4444;">→</span> Financing information + calculator
+                    </li>
+                    <li style="padding: 6px 0; padding-left: 20px; position: relative; color: rgba(255, 255, 255, 0.8); font-size: 14px;">
+                        <span style="position: absolute; left: 0; color: #EF4444;">→</span> Before/after photo gallery
+                    </li>
+                </ul>
+            </div>
+            
             <div class="case-study-metrics">
                 <div class="metric-item">
                     <div class="metric-number">11</div>
@@ -1516,12 +1513,14 @@
             <div class="pricing-card">
                 <div class="pricing-header">
                     <h3>Essential Site</h3>
+                    <p style="font-size: 13px; color: rgba(255, 255, 255, 0.6); margin-bottom: 15px; font-style: italic;">Best for solo operators who want a clean lead-gen site fast</p>
                     <div class="price">$2,500</div>
                     <div class="price-period">one-time payment</div>
                 </div>
                 <ul class="pricing-features">
                     <li>✓ 5 custom pages</li>
                     <li>✓ Mobile-responsive design</li>
+                    <li>✓ Professional copywriting</li>
                     <li>✓ Lead capture forms</li>
                     <li>✓ Click-to-call buttons</li>
                     <li>✓ Full SEO setup</li>
@@ -1531,23 +1530,24 @@
                     <li>✓ 48-72 hour launch</li>
                     <li>✓ 30 days of edits</li>
                 </ul>
-                <a href="apply.html" class="btn-pricing">Get Started</a>
+                <a href="apply.html" class="btn-pricing">Apply Now (60 sec)</a>
             </div>
             
             <div class="pricing-card featured">
                 <div class="popular-badge">Most Popular</div>
                 <div class="pricing-header">
                     <h3>Premium Site</h3>
+                    <p style="font-size: 13px; color: rgba(255, 255, 255, 0.6); margin-bottom: 15px; font-style: italic;">Best for established contractors who want to rank in multiple cities</p>
                     <div class="price">$3,500</div>
                     <div class="price-period">one-time payment</div>
                 </div>
                 <ul class="pricing-features">
                     <li>✓ 10 custom pages</li>
                     <li>✓ Premium design template</li>
+                    <li>✓ Professional copywriting</li>
                     <li>✓ Advanced lead forms</li>
                     <li>✓ Enterprise SEO setup</li>
                     <li>✓ Google Business integration</li>
-                    <li>✓ Professional copywriting</li>
                     <li>✓ Photo optimization</li>
                     <li>✓ Service area pages (5 cities)</li>
                     <li>✓ Blog setup</li>
@@ -1556,18 +1556,20 @@
                     <li>✓ 48-72 hour launch</li>
                     <li>✓ 30 days of edits</li>
                 </ul>
-                <a href="apply.html" class="btn-pricing">Get Started</a>
+                <a href="apply.html" class="btn-pricing">Apply Now (60 sec)</a>
             </div>
             
             <div class="pricing-card">
                 <div class="pricing-header">
                     <h3>Enterprise</h3>
+                    <p style="font-size: 13px; color: rgba(255, 255, 255, 0.6); margin-bottom: 15px; font-style: italic;">Best for multi-location or teams needing CRM + automations</p>
                     <div class="price">Custom</div>
                     <div class="price-period">contact for quote</div>
                 </div>
                 <ul class="pricing-features">
                     <li>✓ Unlimited pages</li>
                     <li>✓ Custom design + branding</li>
+                    <li>✓ Professional copywriting</li>
                     <li>✓ Advanced integrations</li>
                     <li>✓ CRM setup (HubSpot, etc.)</li>
                     <li>✓ Marketing automation</li>
@@ -1682,10 +1684,11 @@
     <section class="cta-section" id="apply">
         <div class="cta-content">
             <h2>Ready to Win More Jobs?</h2>
-            <p>Stop losing customers to competitors with better websites. Get a professional contractor site that generates leads 24/7. Most sites launch in 48-72 hours.</p>
+            <p>Stop losing customers to competitors with better websites. Get a professional contractor site that generates leads 24/7. Launch in 48-72 hours.</p>
+            <p style="font-size: 14px; color: rgba(255,255,255,0.5); margin-top: -20px; margin-bottom: 35px; font-style: italic;">If you're not a fit, we'll tell you.</p>
             <div class="cta-buttons">
-                <a href="apply.html" class="btn-cta btn-cta-primary">Apply Now</a>
-                <a href="about.html" class="btn-cta btn-cta-secondary">Learn More →</a>
+                <a href="apply.html" class="btn-cta btn-cta-primary">Apply Now (60 sec)</a>
+                <a href="#examples" class="btn-cta btn-cta-secondary">See Examples</a>
             </div>
         </div>
     </section>
@@ -1718,7 +1721,7 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
-                if (href !== '#' && href !== '#apply') {
+                if (href !== '#') {
                     e.preventDefault();
                     const target = document.querySelector(href);
                     if (target) {
