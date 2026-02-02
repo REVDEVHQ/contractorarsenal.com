@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Contractor Arsenal</title>
+    <meta name="description" content="Learn what makes Contractor Arsenal different. We build professional websites that help contractors win more jobs.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #1F1F1F;
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        .header {
+            background: #1F1F1F;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-wrap {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 45px;
+            width: auto;
+        }
+        
+        .header-nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .header-nav a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        
+        .header-nav a:hover {
+            color: #fff;
+        }
+        
+        .btn-apply {
+            background: #EF4444;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .btn-apply:hover {
+            background: #DC2626;
+            transform: translateY(-2px);
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #1F1F1F 0%, #2a1a1a 100%);
+            padding: 120px 40px 80px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 900;
+            margin-bottom: 25px;
+            line-height: 1.1;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.75);
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        
+        /* Mission Section */
+        .mission {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 100px 40px;
+        }
+        
+        .mission-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .mission h2 {
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 30px;
+        }
+        
+        .mission p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: #1F1F1F;
+            padding: 100px 40px;
+        }
+        
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+        }
+        
+        .stat-card {
+            text-align: center;
+            border-left: 3px solid rgba(255, 255, 255, 0.1);
+            padding-left: 20px;
+            transition: all 0.3s;
+        }
+        
+        .stat-card:hover {
+            border-left-color: #EF4444;
+            transform: translateX(5px);
+        }
+        
+        .stat-num {
+            font-size: 52px;
+            font-weight: 900;
+            color: #EF4444;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Services Section */
+        .services {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 100px 40px;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        
+        .section-header h2 {
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+        
+        .section-header p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .services-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+        
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 40px;
+            transition: all 0.3s;
+        }
+        
+        .service-card:hover {
+            border-color: #EF4444;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(239, 68, 68, 0.2);
+        }
+        
+        .service-card h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+        }
+        
+        .service-card li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .service-card li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #EF4444;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        
+        /* Team Section */
+        .team {
+            background: #1F1F1F;
+            padding: 100px 40px;
+        }
+        
+        .team-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        
+        .team-member {
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+        
+        .team-member:hover .team-photo {
+            transform: scale(1.1);
+            border-color: #EF4444;
+            box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+        }
+        
+        .team-member h3 {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        
+        .team-member p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 15px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a1a1a 100%);
+            padding: 100px 40px;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 25px;
+        }
+        
+        .cta-section p {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1F1F1F;
+            padding: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-content p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+        
+        .social-link {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.2s;
+        }
+        
+        .social-link:hover {
+            color: #fff;
+        }
+        
+        /* Mobile */
+        @media (max-width: 968px) {
+            .header-nav {
+                display: none;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+            
+            .services-grid,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <a href="index.html" class="logo">
+                <img src="https://storage.googleapis.com/msgsndr/kfZT6c91jZcZU6PUztl8/media/69387c0a578cc7a588bf9199.png" alt="Contractor Arsenal">
+            </a>
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="apply.html" class="btn-apply">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Learn What Makes Us Different</h1>
+        <p>Our vision at Contractor Arsenal is to empower contractors to thrive in the digital age by delivering professional websites and marketing solutions. We are dedicated to crafting impactful strategies that connect with customers, drive measurable results, and foster meaningful growth.</p>
+    </section>
+
+    <section class="mission">
+        <div class="mission-content">
+            <h2>Our Mission</h2>
+            <p>Through creativity, integrity, and a commitment to excellence, we strive to be a trusted partner in our contractor clients' journey toward success. We understand the trades because we've worked with contractors for years. We know what it takes to win jobs, build trust, and grow a sustainable business in your local market.</p>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-num">$850K+</div>
+                <div class="stat-label">Revenue generated for clients</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">150+</div>
+                <div class="stat-label">Websites built</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">50+</div>
+                <div class="stat-label">Contractors partnered</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">8.4x</div>
+                <div class="stat-label">Average ROI</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Explore the comprehensive suite of services we offer to drive success for your contractor business.</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Professional Website Design</h3>
+                <ul>
+                    <li>Mobile-responsive contractor websites</li>
+                    <li>Industry-specific templates</li>
+                    <li>Fast load times & SEO optimization</li>
+                    <li>Lead capture forms & click-to-call</li>
+                </ul>
+            </div>
+            
+            <div class="service-card">
+                <h3>Local SEO & Marketing</h3>
+                <ul>
+                    <li>Google Business Profile setup</li>
+                    <li>Service area page creation</li>
+                    <li>Local keyword optimization</li>
+                    <li>Review management integration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="section-header">
+            <h2>Our Team</h2>
+            <p>Meet the dedicated professionals at Contractor Arsenal. Our team brings a wealth of experience and a passion for helping contractors excel in the digital world. We are committed to driving results, fostering growth, and building meaningful relationships with our clients.</p>
+        </div>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-photo">👨‍💼</div>
+                <h3>Mike</h3>
+                <p>Founder / Lead Developer</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="team-photo">👩‍💻</div>
+                <h3>Sarah</h3>
+                <p>Design Director</p>
+            </div>
+            
+            <div class="team-member">
+                <div class="team-photo">🎯</div>
+                <h3>James</h3>
+                <p>SEO Specialist</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Get Started Today</h2>
+        <p>What should your next step be? Take full advantage of your contractor business's potential and apply to work with us today!</p>
+        <a href="apply.html" class="btn-apply" style="font-size: 16px; padding: 16px 40px;">Apply Now</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Contractor Arsenal. All rights reserved.</p>
+            <a href="https://www.instagram.com/contractorarsenal/" target="_blank" rel="noopener noreferrer" class="social-link">📸</a>
+        </div>
+    </footer>
+</body>
+</html>
