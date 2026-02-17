@@ -439,15 +439,15 @@ footer{background:var(--bg2);border-top:1.5px solid var(--border);padding:4rem 2
       <span class="nav-logo-text">Contractor Arsenal</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#hero" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#testimonials">Reviews</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <div class="nav-right">
       <a href="https://www.instagram.com/contractorarsenal/" target="_blank" rel="noopener" class="nav-btn">📸 @contractorarsenal</a>
-      <a href="#finalcta" class="nav-btn-primary">Apply Now ↗</a>
+      <a href="apply.html" class="nav-btn-primary">Apply Now ↗</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMobileMenu()">
       <span></span><span></span><span></span>
@@ -457,15 +457,15 @@ footer{background:var(--bg2);border-top:1.5px solid var(--border);padding:4rem 2
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#hero" onclick="closeMobileMenu()">🏠 Home</a>
-  <a href="#about" onclick="closeMobileMenu()">⚡ About Us</a>
+  <a href="index.html" onclick="closeMobileMenu()">🏠 Home</a>
+  <a href="about.html" onclick="closeMobileMenu()">⚡ About Us</a>
   <a href="#services" onclick="closeMobileMenu()">🔧 Services</a>
   <a href="#compare" onclick="closeMobileMenu()">📊 Compare</a>
   <a href="#testimonials" onclick="closeMobileMenu()">⭐ Results</a>
   <a href="#faq" onclick="closeMobileMenu()">❓ FAQ</a>
   <div class="mobile-menu-cta">
     <a href="https://www.instagram.com/contractorarsenal/" target="_blank" rel="noopener" class="mmcta-call" onclick="closeMobileMenu()">📸 Instagram DM</a>
-    <a href="#finalcta" class="mmcta-est" onclick="closeMobileMenu()">📋 Apply Now (60 sec)</a>
+    <a href="apply.html" class="mmcta-est" onclick="closeMobileMenu()">📋 Apply Now (60 sec)</a>
   </div>
 </div>
 
@@ -479,7 +479,7 @@ footer{background:var(--bg2);border-top:1.5px solid var(--border);padding:4rem 2
       </h1>
       <p class="hero-sub">Professional contractor websites built to <a href="#services">rank locally</a> and convert visitors into quote requests. Launch in <a href="#quickstart">48–72 hours</a>.</p>
       <div class="hero-actions">
-        <a href="#finalcta" class="btn-primary">
+        <a href="apply.html" class="btn-primary">
           <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
           Apply Now (60 sec)
         </a>
@@ -569,7 +569,7 @@ Form data sent to your email
         <div class="qs-card-title">Apply in 60 Seconds</div>
         <div class="qs-card-desc">Fill out our quick application. We'll review it and confirm you're a fit — no obligation, no pushy sales calls.</div>
         <div class="qs-btns">
-          <a href="#finalcta" class="btn-red-sm">🎯 Apply Now</a>
+          <a href="apply.html" class="btn-red-sm">🎯 Apply Now</a>
           <a href="https://www.instagram.com/contractorarsenal/" target="_blank" rel="noopener" class="btn-gold-sm">📸 DM on Instagram</a>
         </div>
       </div>
@@ -648,7 +648,7 @@ Form data sent to your email
             </div>
           </div>
         </div>
-        <a href="#finalcta" class="btn-docs">Apply Now — 60 Seconds →</a>
+        <a href="apply.html" class="btn-docs">Apply Now — 60 Seconds →</a>
       </div>
     </div>
   </div>
@@ -805,7 +805,7 @@ Form data sent to your email
     <div class="compare-cta reveal" style="transition-delay:0.2s">
       <p>Ready to stop losing jobs to competitors with better websites?</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-        <a href="#finalcta" class="btn-primary">🎯 Apply Now</a>
+        <a href="apply.html" class="btn-primary">🎯 Apply Now</a>
         <a href="https://www.instagram.com/contractorarsenal/" target="_blank" rel="noopener" class="btn-ghost">📸 DM on Instagram</a>
       </div>
     </div>
@@ -944,90 +944,13 @@ Form data sent to your email
     </div>
     <h2 class="finalcta-title">Ready to Win <span>More Jobs?</span></h2>
     <p class="finalcta-sub">Stop losing customers to competitors with better websites. Apply now — takes 60 seconds. If you're not a fit, we'll tell you upfront.</p>
-    
     <div class="finalcta-btns">
-      <a href="https://www.instagram.com/contractorarsenal/" target="_blank" rel="noopener" class="btn-white">
-        📸 DM on Instagram
+      <a href="apply.html" class="btn-primary" style="font-size:1rem;padding:1rem 2.5rem;border-radius:6px">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        Apply Now — 60 Seconds
       </a>
+      <a href="about.html" class="btn-white">Learn About Us</a>
     </div>
-
-    <!-- FORM -->
-    <div class="estimate-form">
-      <div id="formBody">
-        <p style="font-size:0.82rem;color:var(--text3);margin-bottom:1.25rem;text-align:center;font-weight:600;text-transform:uppercase;letter-spacing:0.05em">📋 Apply Now — 60 Seconds</p>
-        <form id="applyForm" action="https://form.taxi/s/ji2sp19v" method="POST">
-          <div class="form-grid">
-            <div class="form-field">
-              <label for="name">Your Name *</label>
-              <input type="text" id="name" name="name" placeholder="John Smith" required>
-            </div>
-            <div class="form-field">
-              <label for="business">Business Name *</label>
-              <input type="text" id="business" name="business" placeholder="Smith Painting Co." required>
-            </div>
-            <div class="form-field">
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
-            </div>
-            <div class="form-field">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="john@smithpainting.com" required>
-            </div>
-            <div class="form-field">
-              <label for="trade">Your Trade *</label>
-              <select id="trade" name="trade" required>
-                <option value="" disabled selected>Select your trade...</option>
-                <option value="Painting">Painting</option>
-                <option value="Roofing">Roofing</option>
-                <option value="Landscaping">Landscaping</option>
-                <option value="Remodeling">Remodeling</option>
-                <option value="HVAC">HVAC</option>
-                <option value="Plumbing">Plumbing</option>
-                <option value="Electrical">Electrical</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label for="location">Service Area *</label>
-              <input type="text" id="location" name="location" placeholder="Charlotte, NC" required>
-            </div>
-            <div class="form-field">
-              <label for="package">Package Interest</label>
-              <select id="package" name="package">
-                <option value="" disabled selected>Which package?</option>
-                <option value="Essential Site ($2,500)">Essential Site — $2,500</option>
-                <option value="Premium Site ($3,500)">Premium Site — $3,500</option>
-                <option value="Not sure yet">Not sure yet</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label for="revenue">Monthly Revenue (approx.)</label>
-              <select id="revenue" name="revenue">
-                <option value="" disabled selected>Select range...</option>
-                <option value="$10K–$20K/month">$10K–$20K/month</option>
-                <option value="$20K–$50K/month">$20K–$50K/month</option>
-                <option value="$50K–$100K/month">$50K–$100K/month</option>
-                <option value="$100K+/month">$100K+/month</option>
-              </select>
-            </div>
-            <div class="form-field full">
-              <label for="message">Anything else we should know?</label>
-              <textarea id="message" name="message" placeholder="Tell us about your business, current website situation, or any questions..."></textarea>
-            </div>
-          </div>
-          <button type="submit" class="btn-submit" id="submitBtn">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
-            Submit Application
-          </button>
-          <p class="form-note">🔒 No spam, no pressure. We'll review and reach out within 24 hours.</p>
-        </form>
-      </div>
-      <div class="form-success" id="formSuccess">
-        <h3>✅ Application Received!</h3>
-        <p style="color:var(--text2);font-size:0.9rem;margin-top:0.5rem">We'll review your application and reach out within 24 hours. Keep an eye on your email and phone.</p>
-      </div>
-    </div>
-
     <div class="finalcta-stats">
       <div class="fcstat"><span class="fcstat-icon">🏗</span><span class="fcstat-num">50+</span>&nbsp;Active Sites</div>
       <div class="fcstat"><span class="fcstat-icon">⚡</span><span class="fcstat-num">48hr</span>&nbsp;Launch</div>
@@ -1065,10 +988,10 @@ Form data sent to your email
       <div>
         <div class="footer-col-title">Company</div>
         <ul class="footer-links">
-          <li><a href="#about">About Us</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="#testimonials">Results</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#finalcta">Apply Now</a></li>
+          <li><a href="apply.html">Apply Now</a></li>
           <li><a href="#compare">Why Us</a></li>
         </ul>
       </div>
@@ -1076,10 +999,10 @@ Form data sent to your email
         <div class="footer-col-title">Contact</div>
         <ul class="footer-links">
           <li><a href="https://www.instagram.com/contractorarsenal/" target="_blank" rel="noopener">Instagram DM</a></li>
-          <li><a href="mailto:hello@contractorarsenal.com">hello@contractorarsenal.com</a></li>
-          <li><a href="#finalcta">Free Consultation</a></li>
-          <li><a href="#finalcta">Apply — 60 Seconds</a></li>
-          <li><a href="#finalcta">Essential Site — $2,500</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#274f424b4b4867444849535546445348554655544249464b0944484a"><span class="__cf_email__" data-cfemail="9cf4f9f0f0f3dcfff3f2e8eefdffe8f3eefdeeeff9f2fdf0b2fff3f1">[email&#160;protected]</span></a></li>
+          <li><a href="apply.html">Free Consultation</a></li>
+          <li><a href="apply.html">Apply — 60 Seconds</a></li>
+          <li><a href="apply.html">Essential Site — $2,500</a></li>
         </ul>
       </div>
     </div>
@@ -1093,7 +1016,7 @@ Form data sent to your email
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ── SCROLL EVENTS ──
 window.addEventListener('scroll', () => {
   const p = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
@@ -1145,37 +1068,6 @@ document.addEventListener('click', e => {
   const menu = document.getElementById('mobileMenu');
   const btn = document.getElementById('hamburger');
   if (menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) closeMobileMenu();
-});
-
-// ── FORM SUBMIT ──
-document.getElementById('applyForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const btn = document.getElementById('submitBtn');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  btn.style.opacity = '0.7';
-
-  const formData = new FormData(this);
-
-  try {
-    const resp = await fetch('https://form.taxi/s/ji2sp19v', {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    });
-    if (resp.ok) {
-      document.getElementById('formBody').style.display = 'none';
-      document.getElementById('formSuccess').classList.add('visible');
-    } else {
-      btn.textContent = 'Try Again';
-      btn.disabled = false;
-      btn.style.opacity = '1';
-      alert('Something went wrong. Please try again or DM us on Instagram.');
-    }
-  } catch(err) {
-    // Fallback: submit normally
-    this.submit();
-  }
 });
 </script>
 </body>
