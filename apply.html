@@ -290,7 +290,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2rem}
         <li>48–72 hour launch</li>
         <li>30 days of free edits</li>
       </ul>
-      <a href="mailto:hello@contractorarsenal.com" class="btn-price">Contact for Premium</a>
+      <a href="/cdn-cgi/l/email-protection#b2dad7dededdf2d1dddcc6c0d3d1c6ddc0d3c0c1d7dcd3de9cd1dddf" class="btn-price">Contact for Premium</a>
     </div>
   </div>
 </section>
@@ -305,7 +305,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2rem}
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggleMenu(){
   const m=document.getElementById('mobileMenu'),b=document.getElementById('hamburger');
   const o=m.classList.contains('open');
@@ -334,13 +334,3 @@ document.getElementById('applyForm').addEventListener('submit', async function(e
       document.getElementById('formSuccess').classList.add('visible');
     } else {
       btn.textContent = 'Try Again';
-      btn.disabled = false;
-      alert('Something went wrong. Please try again.');
-    }
-  } catch(err) {
-    this.submit();
-  }
-});
-</script>
-</body>
-</html>
